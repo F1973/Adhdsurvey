@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ADHD Survey</h1>
+    <p>Hi There! Do not forget this is not a real diagnosis, just a fun little experiment :)</p>
+    <a href="https://www.adhdSurvey.com" target="_blank">Take the Survey</a>
+
+    <form id="adhdSurvey">
+        <label for="focus">How often do you find it difficult to stay focused on tasks or activities?</label><br>
+        <select id="focus" name="focus">
+            <option value="never">Never</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="veryOften">Very Often</option>
+        </select><br><br>
+
+        <label for="restless">How often do you feel restless or fidgety?</label><br>
+        <select id="restless" name="restless">
+            <option value="never">Never</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="veryOften">Very Often</option>
+        </select><br><br>
+
+        <label for="impulse">How often do you act without thinking about the consequences?</label><br>
+        <select id="impulse" name="impulse">
+            <option value="never">Never</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="veryOften">Very Often</option>
+        </select><br><br>
+
+        <label for="impact">How often do your symptoms interfere with your ability to complete schoolwork or job responsibilities?</label><br>
+        <select id="impact" name="impact">
+            <option value="never">Never</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="veryOften">Very Often</option>
+        </select><br><br>
+
+        <label for="performance">How often do you feel like you are underperforming compared to your potential?</label><br>
+        <select id="performance" name="performance">
+            <option value="never">Never</option>
+            <option value="rarely">Rarely</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="often">Often</option>
+            <option value="veryOften">Very Often</option>
+        </select><br><br>
+
+        <button type="button" onclick="evaluateSurvey()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
